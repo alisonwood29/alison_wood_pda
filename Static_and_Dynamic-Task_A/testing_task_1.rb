@@ -8,7 +8,7 @@
 def func1 val
   #def func1(val)
   if val = 1
-    #if val == 1
+    #should read if val == 1 for comparison, this is setting val equal to 1
   return true
   else
   return false
@@ -21,7 +21,7 @@ dif max a b
       return a
   else
   b
-  #return b
+  #should explicitly return b
   end
 end
 end
@@ -30,12 +30,14 @@ end
 def looper
   for i in 1..10
   puts i
+  #function not returning anything at the moment
   end
 end
 
 failures = 0
 
 if looper == 10
+  #if looper == 1..10, at the moment this test will never pass
   puts "looper passed"
 else
   puts "looper failed"
@@ -59,12 +61,12 @@ else
   puts "func1(3) failed"
   #"max(100,1) failed"
   failrues = failures + 1
-  #failures +=1
+  #failures +=1, failures spelt wrong
 end
 
 
 if failures
-  #failures != 0
+  #failures > 0, failures is defined above so this doesn't make sense
   puts "Test Failed"
 else
   puts "Test Passed"

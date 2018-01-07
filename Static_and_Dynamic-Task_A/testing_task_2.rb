@@ -27,9 +27,11 @@ p max(5, 4)
 
 
 def looper
+  loop = 0
   for i in 1..10
-  puts i
+    puts i
   end
+  return loop += 1
 end
 
 p looper
@@ -37,7 +39,7 @@ p looper
 
 failures = 0
 
-if looper == 10
+if looper == 1..10
   puts "looper passed"
 else
   puts "looper failed"
@@ -57,7 +59,7 @@ if max(100,1) == 100
   puts "max(100,1) passed"
 else
   puts "max(100,1) failed"
-  failrues += 1
+  failures += 1
 end
 
 
