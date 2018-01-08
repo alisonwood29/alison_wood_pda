@@ -27,19 +27,16 @@ p max(5, 4)
 
 
 def looper
-  loop = 0
   for i in 1..10
     puts i
   end
-  return loop += 1
+  return i
 end
-
-p looper
 
 
 failures = 0
 
-if looper == 1..10
+if looper == 10
   puts "looper passed"
 else
   puts "looper failed"
@@ -63,7 +60,7 @@ else
 end
 
 
-if failures != 0
+if failures > 0
   puts "Test Failed"
 else
   puts "Test Passed"

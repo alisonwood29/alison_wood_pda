@@ -37,7 +37,6 @@ end
 failures = 0
 
 if looper == 10
-  #if looper == 1..10, at the moment this test will never pass
   puts "looper passed"
 else
   puts "looper failed"
