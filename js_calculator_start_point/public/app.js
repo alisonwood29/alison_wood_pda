@@ -24,6 +24,7 @@ window.onload = function(){
       operator = (e.target.innerText);
       calculator.operatorClick(operator);
       updateView();
+      console.log(operator);
     };
   });
 
